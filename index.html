@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>scale app</title>
+
+</head>
+<body>
+
+    <div id='preloader'>
+        <img src="bar-loader.gif" alt="preloader">
+    </div>
+
+    <div id="main">
+        <h2>Веб-приложение</h1><br>
+        <img src="start.gif"><br>
+        
+        <button id="buy">Продолжить</button><br>
+        <button id="skip">Пропустить</button><br>
+
+
+       
+        
+    </div>
+
+    <div id="page_list"><br>
+        <h2>Как получить индекс листа</h1><br>
+        <center>
+        <table>
+            <h4>Пример с расписанием 22-27.05.2023 г. (возможно изменится порядок)</h4></tr>
+            <tr><td>Лист</td><td>Индекс</td></tr>
+            <tr><td>Расписание ЗВОНКОВ</td><td>0</td></tr>
+            <tr><td>ЗМ</td><td>1</td></tr>
+            <tr><td>Л, БД</td><td>2</td></tr>
+            <tr><td>ИСиП, ИС</td><td>3</td></tr>
+            <tr><td>ГД, ТР</td><td>4</td></tr>
+            <tr><td>ТПИ</td><td>5</td></tr>
+            <tr><td>ТЭУ</td><td>6</td></tr>
+            <tr><td>МК</td><td>7</td></tr>
+            <tr><td>Д</td><td>8</td></tr>
+        </table>  
+    </center>      
+        <button id="page_1">Далее</button>
+    </div>
+
+    <div id="page_lesson"><br>
+        <h2>Как получить индекс занятий</h1><br>
+        <img src="excel.gif"/>
+        <h4>В данном файле вы сможете определить нужные вам индексы</h4>
+        <h4>xlsx.xlsx - <a href="http://45.142.36.12/pofaktus-bot/data/instance/xlsx.xlsx">cкачать</a></h4><br>
+        <button id="page_2">Далее</button>
+    </div>
+    
+    <div id="page_commands"><br>
+        <img src="command.svg"/>
+        <h2>Cписок комманд для чатов</h1><br>
+        <p>/add - Добавить данные о группе</p>
+        <p>/convert - Сохранить и получить результат</p>
+  
+        <button id="page_3">Далее</button>
+    </div>
+
+    <div id="page_chat"><br>
+        <h2>Чат</h1><br>
+        <img src="chat.gif"/>
+            <center>
+        <div id="chat_id">
+            <button id="page_4"><a href="https://t.me/polling_robot?addgroup=iris&admin=change_info+restrict_members+delete_messages+pin_messages+invite_users">Добавить в свой чат</a></button>
+        </div>
+            </center>
+        <button id="skip_chat">Пропустить</button><br>
+
+    </div>
+
+    <form id="form"><br>
+        <h2>Заполните форму</h2><br>
+        <input type="text" placeholder="Индекс листа" id="list">
+        <input type="text" placeholder="Индекс занятий" id="lesson">
+        
+        <button id="order">Готово</button><br>
+        <button id="home">Вернуться</button>
+    </form>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
