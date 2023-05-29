@@ -62,6 +62,13 @@ button{
     color: var(--tg-theme-button-color);
     background: #00000000;
 }
+
+#chat_skip{
+    font-size: 17px;
+    margin-top: 0px;
+    color: var(--tg-theme-button-color);
+    background: #00000000;
+}
 #home{
     font-size: 17px;
     margin-top: 0px;
